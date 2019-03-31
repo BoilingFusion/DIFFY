@@ -9,4 +9,6 @@ DX=X
 DY=X
 DX=Y
 
-![Image of DY=sin(Xpi/10), DX=cos(Ypi/10)]
+![Image of DY=sin(Xpi/10), DX=cos(Ypi/10)](https://raw.githubusercontent.com/BoilingFusion/DIFFY/master/previews/Preview3.png)
+DY=sin(Xpi/10)
+DX=cos(Ypi/10)
