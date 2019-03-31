@@ -1,0 +1,49 @@
+ClrHome
+Disp "------------------"
+Disp "USE:"
+Disp "DY/DX"
+Input "DY:",Str1
+Input "DX:",Str2
+ClrDraw
+
+Pt-On(Xmin,Ymin,BROWN)
+For(X,Xmin,Xmax,Xscl)
+For(Y,Ymin,Ymax,Yscl)
+expr(Str1)→A
+expr(Str2)→B
+If abs(A)<0.01
+0→A
+If abs(B)<0.01
+0→B
+If imag(A)=0 and imag(B)=0
+Then
+If A=0 or B=0
+Then
+If A=0 and B=0
+Then
+Pt-On(X,Y,MAGENTA)
+Else
+If B=0
+Then
+Line(X,Y,X,Y+Yscl/2,BLACK)
+Line(X,Y,X,Y-Yscl/2,BLACK)
+Pt-On(X,Y,ORANGE)
+Else
+Line(X,Y,X+Xscl/2,Y,BLACK)
+Line(X,Y,X-Xscl/2,Y,BLACK)
+Pt-On(X,Y,GREEN)
+End
+End
+Else
+A/B→D
+√((1)²+(D)²)→N
+Line(X,Y,X+Xscl/N/2,Y+YsclD/N/2,BLACK)
+Line(X,Y,X-Xscl/N/2,Y-YsclD/N/2,BLACK)
+Pt-On(X,Y,BLUE)
+If D>0
+Pt-On(X,Y,RED)
+
+End
+End
+End
+End
