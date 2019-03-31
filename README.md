@@ -8,3 +8,5 @@ DX=X
 ![Image of DY=X, DX=Y](https://raw.githubusercontent.com/BoilingFusion/DIFFY/master/previews/Preview2.png)
 DY=X
 DX=Y
+
+![Image of DY=sin(Xpi/10), DX=cos(Ypi/10)]
